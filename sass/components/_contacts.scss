@@ -1,0 +1,59 @@
+.contacts .contacts__link {
+  color: $text-main;
+  display: flex;
+}
+.contacts .contacts__link {
+  align-items: center;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer > .flex {
+  align-items: baseline;
+}
+.footer-contacts {
+  margin-right: 70px;
+  min-width: 231px;
+  text-align: start;
+}
+.address__mail {
+  margin-top: 0px;
+  margin-bottom: 9px;
+
+  color: $text-white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.address__email,
+.address__tel {
+  display: block;
+
+  color: $text-address;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+}
+.address__email {
+  margin-bottom: 9px;
+}
+.address {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contact-mail-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 16px;
+}
+.contact-tell-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 20px;
+}

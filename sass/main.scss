@@ -1,0 +1,493 @@
+@import './utils/variables';
+@import './components/logo';
+@import './components/button';
+@import './components/nav';
+@import './components/social';
+@import './components/form-modal';
+@import './components/box-form';
+@import './components/contacts';
+
+/* контентные изображения */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* списки */
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.features-list,
+.contacts,
+.nav-list,
+.social-list,
+.social-network,
+.team-list,
+.activity-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  /* flex-wrap: wrap; */
+  align-items: normal;
+  justify-content: normal;
+  display: flex;
+}
+
+.nav-list__link,
+.contacts__link {
+  text-decoration: none;
+  margin: 0px;
+}
+.nav-list__link.current,
+.nav-list .nav-list__link:hover,
+.nav-list .nav-list__link:focus,
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus {
+  color: $text-accent;
+  --color3: $text-accent;
+}
+.nav-list,
+.contacts {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: flex;
+}
+
+/* скрытые объекты */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* секции*/
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1600px;
+}
+
+/* основной контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container--footer {
+  display: flex;
+  justify-content: normal;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+/* index и portfolio */
+.studio-page,
+.portfolio-page {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: $text-main;
+  letter-spacing: 0.03em;
+}
+
+/* шапка и подвал */
+.footer {
+  background-color: $header-footer;
+}
+
+/* паддинги секций */
+.footer,
+.features,
+.team,
+.clients,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1600px;
+}
+
+.portfolio {
+  border-top: 1px solid $line;
+}
+
+.background {
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 200px 0px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/Header.jpg');
+}
+
+.container--linetop {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+/* Параметры ссылок для обратной связи */
+
+/* Иконки в хедере */
+
+/* Контейнер для заголовка и кноки секции Шапка */
+.primary__box {
+  display: inline-block;
+  width: 696px;
+}
+
+.primary {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1600px;
+}
+/* h1 на странице Studio */
+.primary .primary__title {
+  margin-bottom: 30px;
+  margin-top: 0px;
+  color: $text-white;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+/* Особенности */
+.features {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1600px;
+}
+.features-list {
+  justify-content: space-between;
+}
+
+/* Карточка Особенности */
+.features-list__card {
+  /* width: 270px; */
+  width: calc((100% - 30px * 3) / 4);
+  text-align: start;
+  line-height: 1.71;
+}
+.features-list__title {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-weight: 700;
+  color: $text-header;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-list__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-main;
+  margin: 0px;
+}
+
+.features-list__image {
+  background-color: $second;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* Чем мы занимаемся */
+.activity {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1600px;
+}
+.activity {
+  padding-bottom: 94px;
+}
+.activity__title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $text-header;
+}
+
+/* Карточка - наша деятельность */
+.activity-list__card {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  display: flex;
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.activity-list__card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* Наша команда */
+.team {
+  background-color: $second;
+}
+.team__title {
+  margin-bottom: 50px;
+  color: $text-header;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.team-card-image {
+  justify-content: center;
+}
+
+/* Карточка Наша команда */
+.team-list__card {
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 30px * 3) / 4);
+  display: flex;
+  background-color: $primary;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list__card:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+/*Раздел с текстом под фото в карточке Наша команда  */
+.team-card__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-card__title > .team-card__name {
+  margin-bottom: 10px;
+
+  color: $text-header;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/*Текст-доложность в карточке Наша команда */
+.team-card__title > .team-card__position {
+  color: $text-main;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+/* Ссылки на соц.сети в карточках Наша команда */
+
+/* Постоянные клиенты */
+.clients__item:not(:nth-child(6n)) {
+  margin-right: 30px;
+}
+.clients__item {
+  width: calc((100% - 30px * 5) / 6);
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.client-link {
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 170px;
+  border: 1px solid $icon;
+  border-radius: 4px;
+  display: flex;
+}
+.client-link {
+  transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+}
+
+.client-link {
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 950ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all, transform;
+  transition-duration: 150ms, 950ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s, 0s;
+}
+
+/* Ховер  */
+.client-link:hover {
+  --color2: $accent;
+  border: 1px solid $accent;
+}
+.clients .clients__title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+  color: $text-header;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+/* Марджины и паддинги для Портфолио*/
+.portfolio-filter {
+  margin-bottom: 34px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* Кнопки-фильтры в портфолио  */
+.portfolio-filter .button {
+  align-items: flex-start;
+  margin-right: 8px;
+  padding: 6px 22px;
+
+  color: $text-header;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  background-color: $second;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Ховер и фокус для кнопок фильтров портфолио */
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
+  color: $text-white;
+  background-color: $accent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* Правый марджин для сетки многострочного контейнера, исключаем каждый третий */
+.projects__card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* Нижний марджин для сетки многострочного контейнера, исключаем три нижних */
+.projects__card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.projects {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ширина в карточке портфолио */
+.projects__card {
+  width: calc((100% - 2 * 30px) / 3);
+}
+.projects__image {
+  position: relative;
+  justify-content: center;
+  height: 294px;
+  overflow: hidden;
+}
+/* Заголовки под карточками в портфолио */
+.projects__title > .projects__name {
+  margin-bottom: 4px;
+
+  color: $text-header;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Бордер с трех сторон контейнера */
+.projects__title {
+  padding: 20px 24px;
+  text-align: start;
+}
+
+/* Текст под карточками портфолио */
+.projects__title > .projects__label {
+  color: $text-main;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Тень при ховере на карточках-ссылках портфолио */
+.projects__link {
+  display: block;
+  border: 1px solid $border;
+  text-decoration: none;
+}
+
+.projects__link:hover,
+.projects__link:focus {
+  border: 1px solid $border;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+.projects__link:hover .projects__overley,
+.projects__link:focus .projects__overley {
+  transform: translateY(0%);
+}
+
+/* Подписка */
