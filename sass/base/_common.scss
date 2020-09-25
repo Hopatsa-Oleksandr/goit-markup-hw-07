@@ -1,0 +1,36 @@
+.features-list,
+.contacts,
+.nav-list,
+.social-list,
+.social-network,
+.team-list,
+.activity-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  align-items: normal;
+  justify-content: normal;
+  display: flex;
+}
+
+.studio-page,
+.portfolio-page {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: $text-main;
+  letter-spacing: 0.03em;
+}
+
+.footer,
+.features,
+.team,
+.clients,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1600px;
+}

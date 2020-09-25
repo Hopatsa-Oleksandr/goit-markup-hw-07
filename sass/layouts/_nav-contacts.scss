@@ -1,0 +1,19 @@
+.nav-list__link,
+.contacts__link {
+  text-decoration: none;
+  margin: 0px;
+}
+.nav-list__link.current,
+.nav-list .nav-list__link:hover,
+.nav-list .nav-list__link:focus,
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus {
+  color: $text-accent;
+  --color3: $text-accent;
+}
+.nav-list,
+.contacts {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: flex;
+}
