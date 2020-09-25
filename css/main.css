@@ -850,6 +850,15 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
 }
 
 .features-list__card {
@@ -881,11 +890,11 @@ img {
 }
 
 .features-list__image {
-  background-color: #f5f4fa;
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  background-color: #f5f4fa;
 }
 
 .features-list__icon {
@@ -1205,7 +1214,6 @@ img {
           transform: translateY(0%);
 }
 
-.features-list,
 .contacts,
 .nav-list,
 .social-list,

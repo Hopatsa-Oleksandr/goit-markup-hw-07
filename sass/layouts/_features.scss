@@ -6,6 +6,11 @@
 }
 .features-list {
   justify-content: space-between;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  align-items: normal;
 }
 .features-list__card {
   width: calc((100% - 30px * 3) / 4);
@@ -34,11 +39,11 @@
 }
 
 .features-list__image {
-  background-color: $second;
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  background-color: $second;
 }
 .features-list__icon {
   width: 70px;
