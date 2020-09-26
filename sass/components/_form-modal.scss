@@ -1,18 +1,16 @@
-.backdrop .form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  padding: 40px;
-
-  width: 528px;
-  height: 581px;
-  background-color: $text-white;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
+// .backdrop .form {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   padding: 40px;
+//   width: 528px;
+//   height: 581px;
+//   background-color: $text-white;
+//   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 1px 3px rgba(0, 0, 0, 0.12);
+//   border-radius: 4px;
+// }
 
 .backdrop .form-field {
   display: block;
@@ -38,7 +36,6 @@
   height: 581px;
   position: absolute;
   left: 50%;
-
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -61,12 +58,10 @@
   height: 38px;
   display: block;
   background-color: #fff;
-
   margin: 0;
   padding: 10px 20px;
   padding-left: 40px;
   font: inherit;
-
   box-shadow: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
