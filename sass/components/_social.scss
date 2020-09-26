@@ -4,6 +4,10 @@
 .social-network__icon {
   width: 20px;
   height: 20px;
+  fill: $icon;
+}
+.social-list__item {
+  margin-right: 10px;
 }
 .social-network__link {
   width: 44px;
@@ -13,14 +17,20 @@
   align-items: center;
   display: flex;
 }
+
 .team .social-network__link {
   background-color: $footer-icon;
-  --color4: $icon;
+  // fill: $icon;
 }
 .team .social-network__link:hover {
   background-color: $accent;
-  --color4: $text-white;
+  fill: $text-white;
 }
+
+.team .social-network__link:hover .social-network__icon {
+  fill: $text-white;
+}
+
 .footer-social__label {
   margin-bottom: 20px;
   text-align: start;
@@ -29,19 +39,20 @@
   font-weight: 700;
   line-height: 1.14;
 }
-.footer .social-link {
+.footer .social-network__link {
   background-color: $footer-icon;
-  --color4: $text-white;
+  // fill: $text-white;
+  // fill: $text-white;
   align-items: center;
 }
-.footer .social-link:hover {
+.footer .social-network__link:hover {
   background-color: $accent;
 }
 .social-network__icon {
   transition-property: background-color, transform;
   transition-duration: 500ms;
   transition-timing-function: linear;
-  transition-delay: 0;
+  transition-delay: 500ms;
 }
 .social-network__icon:hover {
   transform: rotate(360deg);

@@ -78,6 +78,11 @@
 .social-network__icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list__item {
+  margin-right: 10px;
 }
 
 .social-network__link {
@@ -97,12 +102,15 @@
 
 .team .social-network__link {
   background-color: rgba(255, 255, 255, 0.1);
-  --color4: $icon;
 }
 
 .team .social-network__link:hover {
   background-color: #2196f3;
-  --color4: $text-white;
+  fill: #ffffff;
+}
+
+.team .social-network__link:hover .social-network__icon {
+  fill: #ffffff;
 }
 
 .footer-social__label {
@@ -114,15 +122,14 @@
   line-height: 1.14;
 }
 
-.footer .social-link {
+.footer .social-network__link {
   background-color: rgba(255, 255, 255, 0.1);
-  --color4: $text-white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.footer .social-link:hover {
+.footer .social-network__link:hover {
   background-color: #2196f3;
 }
 
@@ -135,8 +142,8 @@
           transition-duration: 500ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 
 .social-network__icon:hover {
@@ -1054,6 +1061,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  fill: #afb1b8;
 }
 
 .client-link {
@@ -1079,7 +1087,7 @@ img {
 }
 
 .client-link:hover {
-  --color2: $accent;
+  fill: #2196f3;
   border: 1px solid #2196f3;
 }
 

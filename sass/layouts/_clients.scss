@@ -27,6 +27,7 @@
   border: 1px solid $icon;
   border-radius: 4px;
   display: flex;
+  fill: $icon;
 }
 .client-link {
   transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
@@ -42,7 +43,7 @@
   transition-delay: 0s, 0s;
 }
 .client-link:hover {
-  --color2: $accent;
+  fill: $accent;
   border: 1px solid $accent;
 }
 .clients .clients__title {
