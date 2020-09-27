@@ -16,11 +16,13 @@
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden {
+.modal {
   transform: translate(-50%, -50%) scale(0);
 }
-
-.backdrop .modal {
+}
+.backdrop {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,20 +35,8 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time $time-function $time;
 }
+}
 
-// .button-close {
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
-//   padding: 0;
-//   margin: 0;
-//   justify-content: center;
-//   align-items: center;
-//   width: 30px;
-//   height: 30px;
-//   border-radius: 50%;
-//   border: 1px solid $border-close;
-// }
 
 .icon-close {
   position: absolute;
@@ -90,7 +80,8 @@
   transform: translateY(100%);
   transition: transform $time $time-function;
 }
-.backdrop .description {
+.backdrop {
+.description {
   margin-bottom: 30px;
   margin-top: 0;
 
@@ -100,6 +91,7 @@
   text-align: center;
 
   color: $text-header;
+}
 }
 .comment {
   margin-bottom: 20px;
@@ -136,7 +128,8 @@
   margin-bottom: 30px;
 }
 
-.field-polisy .checkbox {
+.field-polisy {
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -146,8 +139,9 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.field-polisy .icon-checkbox {
+}
+.field-polisy {
+.icon-checkbox {
   display: inline-block;
   width: 16px;
   height: 14px;
@@ -156,8 +150,9 @@
   border-radius: 4px;
   transition: transform 250ms linear;
 }
-
-.checkbox:checked + .icon-checkbox {
+}
+.checkbox:checked + {
+.icon-checkbox {
   border-color: transparent;
   background-color: $accent;
   background-image: url(../images/Оригинальные_svg/check.svg);
@@ -165,7 +160,7 @@
   background-origin: border-box;
   background-repeat: no-repeat;
 }
-
+}
 .checkbox-policy {
   font-size: 14px;
   line-height: 1.71;
@@ -177,7 +172,8 @@
   text-decoration: underline;
 }
 
-.backdrop .close {
+.backdrop {
+.close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -189,13 +185,15 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
-
-.backdrop .button-submit {
+}
+.backdrop {
+.button-submit {
   display: flex;
   justify-content: center;
 }
-
-.backdrop .button {
+}
+.backdrop {
+.button {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -211,4 +209,5 @@
   border-radius: 4px;
   background-color: $accent;
   cursor: pointer;
+}
 }

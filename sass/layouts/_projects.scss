@@ -20,7 +20,8 @@
   height: 294px;
   overflow: hidden;
 }
-.projects__title > .projects__name {
+.projects__title > {
+.projects__name {
   margin-bottom: 4px;
 
   color: $text-header;
@@ -29,15 +30,18 @@
   line-height: 2;
   letter-spacing: 0.06em;
 }
+}
 .projects__title {
   padding: 20px 24px;
   text-align: start;
 }
-.projects__title > .projects__label {
+.projects__title > {
+.projects__label {
   color: $text-main;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
 }
 .projects__link {
   display: block;
