@@ -22,7 +22,7 @@
   margin-bottom: 20px;
 }
 
-.primary .primary__button {
+.primary__button {
   padding: 10px;
   min-width: 200px;
   color: #ffffff;
@@ -55,7 +55,7 @@
   margin-right: 50px;
 }
 
-.nav-list .nav-list__link {
+.nav-list__link {
   color: #212121;
 }
 
@@ -547,6 +547,26 @@
   padding-left: 40px;
 }
 
+.form-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  color: #757575;
+  width: 358px;
+  margin-bottom: 0;
+  margin-right: 13px;
+  margin-bottom: 0;
+  width: 358px;
+}
+
 .icon-send {
   position: absolute;
   right: 18px;
@@ -555,7 +575,7 @@
   transform: translatey(-50%);
 }
 
-.contacts .contacts__link {
+.contacts__link {
   color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,7 +759,7 @@ img {
   max-width: 1600px;
 }
 
-.primary .primary__title {
+.primary__title {
   margin-bottom: 30px;
   margin-top: 0px;
   color: #ffffff;
@@ -778,7 +798,7 @@ img {
   line-height: 1.71;
 }
 
-.features-list__title {
+.features__title {
   margin-bottom: 10px;
   margin-top: 0px;
   font-weight: 700;
@@ -987,7 +1007,7 @@ img {
   border: 1px solid #2196f3;
 }
 
-.clients .clients__title {
+.clients__title {
   margin-bottom: 50px;
   margin-top: 0px;
   color: #212121;

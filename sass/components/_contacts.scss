@@ -1,18 +1,18 @@
 .contacts {
-.contacts__link {
-  color: $text-main;
-  display: flex;
-  align-items: center;
-}
+  &__link {
+    color: $text-main;
+    display: flex;
+    align-items: center;
+  }
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer > {
-.flex {
-  align-items: baseline;
-}
+  .flex {
+    align-items: baseline;
+  }
 }
 .footer-contacts {
   margin-right: 70px;

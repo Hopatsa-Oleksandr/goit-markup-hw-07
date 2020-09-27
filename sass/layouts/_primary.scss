@@ -10,15 +10,15 @@
   max-width: 1600px;
 }
 .primary {
-.primary__title {
-  margin-bottom: 30px;
-  margin-top: 0px;
-  color: $text-white;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  &__title {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: $text-white;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
 
-  text-transform: uppercase;
-}
+    text-transform: uppercase;
+  }
 }
