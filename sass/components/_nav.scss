@@ -2,8 +2,10 @@
   align-items: center;
   display: flex;
 }
-.nav .logo-nav {
+.nav {
+.logo-nav {
   margin-right: 93px;
+}
 }
 .nav-list > .nav-list__item:not(:last-child),
 .contacts > .contacts__item:not(:last-child) {

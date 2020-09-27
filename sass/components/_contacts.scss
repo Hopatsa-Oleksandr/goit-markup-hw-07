@@ -1,15 +1,18 @@
-.contacts .contacts__link {
+.contacts {
+.contacts__link {
   color: $text-main;
   display: flex;
   align-items: center;
 }
-
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer > .flex {
+.footer > {
+.flex {
   align-items: baseline;
+}
 }
 .footer-contacts {
   margin-right: 70px;

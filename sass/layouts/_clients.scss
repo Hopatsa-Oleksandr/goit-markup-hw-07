@@ -42,11 +42,13 @@
   fill: $accent;
   border: 1px solid $accent;
 }
-.clients .clients__title {
+.clients {
+.clients__title {
   margin-bottom: 50px;
   margin-top: 0px;
   color: $text-header;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
+}
 }

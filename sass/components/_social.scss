@@ -18,15 +18,17 @@
   display: flex;
 }
 
-.team .social-network__link {
+.team {
+.social-network__link {
   background-color: $footer-icon;
-  // fill: $icon;
 }
-.team .social-network__link:hover {
+}
+.team {
+.social-network__link:hover {
   background-color: $accent;
   fill: $text-white;
 }
-
+}
 .team .social-network__link:hover .social-network__icon {
   fill: $text-white;
 }
@@ -39,14 +41,16 @@
   font-weight: 700;
   line-height: 1.14;
 }
-.footer .social-network__link {
+.footer {
+.social-network__link {
   background-color: $footer-icon;
-  // fill: $text-white;
-  // fill: $text-white;
   align-items: center;
 }
-.footer .social-network__link:hover {
+}
+.footer {
+.social-network__link:hover {
   background-color: $accent;
+}
 }
 .social-network__icon {
   transition-property: background-color, transform;
